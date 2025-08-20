@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkan Doner | Severse Doner - Late Night Doner, Wet Burger, Hot Dog</title>
+  <meta name="description" content="Late night doner in Kalkan: Hatay style doner, wet burger, hot dog, fries, soup and mussels. Order easily via WhatsApp with Severse Doner.">
+  <meta name="keywords" content="Kalkan doner, Kalkan late night doner, Kalkan wet burger, Kalkan hot dog, Kalkan fast food, WhatsApp order doner, QR menu doner, Kalkan street food, Kalkan soup, Kalkan mussels, Kalkan fries">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="severselogo.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header class="main-header" role="banner">
+    <div class="header-inner">
+      <a href="#hero" class="header-logo-link" aria-label="Homepage">
+        <img src="severselogo.png" alt="Severse Doner Logo" class="header-logo" width="120" height="120">
+      </a>
+      <nav class="main-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="hero-main" id="hero">
+      <div class="hero-content hero-flex-modern">
+        <div class="hero-left-modern">
+          <h1>Kalkan's Late Night Doner</h1>
+          <p class="hero-desc-modern">Hatay style doner, wet burger, hot dog, fries and soup to spice up your night!</p>
+          <div class="site-slogan-group">
+            <span class="site-slogan">It's Doner Time!</span>
+            <span class="site-slogan">Wet burger for the night!</span>
+          </div>
+          <a id="open-modal" class="order-btn-hero-modern2" href="#" onclick="openPanelFunc();return false;">Order Now</a>
+          <div class="hero-contacts-modern">
+            <a href="tel:+905383504563" class="hero-contact-ico-btn" title="Call"><span>📞</span></a>
+            <a href="https://wa.me/905383504563" target="_blank" rel="noopener" class="hero-contact-ico-btn" title="WhatsApp"><span>💬</span></a>
+            <a href="https://instagram.com/seversedonerkalkan" target="_blank" rel="noopener" class="hero-contact-ico-btn" title="Instagram"><span>📸</span></a>
+          </div>
+        </div>
+        <div class="hero-right-modern">
+          <img src="Asset/SEVERSEDONER.jpg" alt="Severse Doner Kalkan" class="hero-img-modern" width="420" height="320">
+        </div>
+      </div>
+    </section>
+    <section class="menu-showcase" id="menu">
+      <h2>Menu Highlights</h2>
+      <div class="site-slogan-group">
+        <span class="site-slogan">Perfect time for doner!</span>
+        <span class="site-slogan">Hot soup is here!</span>
+      </div>
+      <div class="menu-categories">
+        <article class="menu-category-block">
+          <h3>Soups</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Lentil Soup" class="menu-img" width="80" height="80">
+              <h4>Lentil Soup</h4>
+              <p>Classic homemade soup with red lentils, onion, carrot and spices.</p>
+              <span class="price">200₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Chicken Broth Soup" class="menu-img" width="80" height="80">
+              <h4>Chicken Broth Soup</h4>
+              <p>Nourishing soup made with chicken on the bone, flavored with lemon and black pepper.</p>
+              <span class="price">250₺</span>
+            </li>
+          </ul>
+        </article>
+        <article class="menu-category-block">
+          <h3>Doner Wraps</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Hatay Style Wrap" class="menu-img" width="80" height="80">
+              <h4>Hatay Style Wrap</h4>
+              <p>Specially spiced chicken doner, tomato, pickles, hot sauce and garlic yogurt in lavash.</p>
+              <span class="price">250₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Double Wrap" class="menu-img" width="80" height="80">
+              <h4>Double Wrap</h4>
+              <p>Double chicken doner, extra sauce and flavor; for those who love big portions.</p>
+              <span class="price">400₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Doner Plate" class="menu-img" width="80" height="80">
+              <h4>Doner Plate</h4>
+              <p>150-200g chicken doner served with lavash and garnish.</p>
+              <span class="price">350₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Cheese Doner" class="menu-img" width="80" height="80">
+              <h4>Cheese Doner</h4>
+              <p>Chicken doner served in lavash with melted cheese.</p>
+              <span class="price">300₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Cheddar Doner" class="menu-img" width="80" height="80">
+              <h4>Cheddar Doner</h4>
+              <p>Chicken doner enriched with special cheddar cheese, a satisfying flavor.</p>
+              <span class="price">350₺</span>
+            </li>
+          </ul>
+        </article>
+        <article class="menu-category-block">
+          <h3>Street Food</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Wet Burger" class="menu-img" width="80" height="80">
+              <h4>Wet Burger</h4>
+              <p>Mini burger with plenty of sauce, soft bun and juicy patty.</p>
+              <span class="price">150₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/ambalajturuncu.png" alt="Hot Dog" class="menu-img" width="80" height="80">
+              <h4>Hot Dog</h4>
+              <p>Sausage in sandwich bread, served with ketchup, mayo and pickles if desired.</p>
+              <span class="price">150₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Patso" class="menu-img" width="80" height="80">
+              <h4>Patso</h4>
+              <p>Crispy fries in bread, with ketchup and mayo.</p>
+              <span class="price">150₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Cheese Patso" class="menu-img" width="80" height="80">
+              <h4>Cheese Patso</h4>
+              <p>Classic patso with extra cheese for a delicious street food experience.</p>
+              <span class="price">200₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Fries" class="menu-img" width="80" height="80">
+              <h4>Fries</h4>
+              <p>Thick cut crispy fries, served with ketchup and mayo.</p>
+              <span class="price">220₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Nuggets & Chips" class="menu-img" width="80" height="80">
+              <h4>Nuggets & Chips</h4>
+              <p>6 crispy chicken nuggets and fries for a full plate of flavor.</p>
+              <span class="price">350₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Stuffed Mussels" class="menu-img" width="80" height="80">
+              <h4>Stuffed Mussels</h4>
+              <p>Fresh mussels from the Mediterranean to spice up your night.</p>
+              <span class="price">-</span>
+            </li>
+          </ul>
+        </article>
+        <article class="menu-category-block">
+          <h3>Beverages</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Cola" class="menu-img" width="80" height="80">
+              <h4>Cola</h4>
+              <p>Cold beverage.</p>
+              <span class="price">100₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Fanta" class="menu-img" width="80" height="80">
+              <h4>Fanta</h4>
+              <p>Cold beverage.</p>
+              <span class="price">100₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Gazoz" class="menu-img" width="80" height="80">
+              <h4>Gazoz</h4>
+              <p>Cold beverage.</p>
+              <span class="price">100₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Ice Tea" class="menu-img" width="80" height="80">
+              <h4>Ice Tea</h4>
+              <p>Cold beverage.</p>
+              <span class="price">100₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Ayran" class="menu-img" width="80" height="80">
+              <h4>Ayran</h4>
+              <p>Cold beverage.</p>
+              <span class="price">50₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Şalgam" class="menu-img" width="80" height="80">
+              <h4>Şalgam</h4>
+              <p>Cold beverage.</p>
+              <span class="price">75₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Water" class="menu-img" width="80" height="80">
+              <h4>Water</h4>
+              <p>Cold beverage.</p>
+              <span class="price">50₺</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <p>Severse Doner is a fast food restaurant in the center of Kalkan, open until 4:00 AM, known for its fresh and fast service. We are the best address in Kalkan for Hatay style chicken doner, wet burger, hot dog, fries, lentil and chicken soup, stuffed mussels and many more street flavors. When you get hungry late at night, you can easily order via WhatsApp from the beach or home and reach the most delicious doner and fast food menu in Kalkan. All our products are prepared daily and with care, and we attach great importance to hygiene and quality. If you are looking for doner, wet burger, hot dog, soup or mussels in Kalkan, Severse Doner is waiting for you!</p>
+      <p><strong>Severse Doner has been serving in Kalkan since 2017 and has recently moved to its new location.</strong></p>
+      <div class="seo-block">
+        Seversedöner offers Hatay-style chicken döner in Kalkan, serving late-night döner, wet burgers, hot dogs, sausage sandwiches, and patso varieties. Our street food menu features mussel dolma, potato chips, nuggets & chips, along with fast food combos and WhatsApp order döner options. We prepare Kalkan chicken wraps, double wraps, cheesy and cheddar döner, plus a selection of soups like lentil soup and chicken broth. Complement your meal with fresh drinks such as cola, Fanta, soda, ice tea, ayran, turnip juice, and water.
+      </div>
+    </section>
+  </main>
+  <!-- Sticky Quick Panel -->
+  <div class="sticky-quick-panel" aria-label="Quick access">
+    <button class="quick-btn order-btn" id="order-btn-sticky" aria-label="Order Now" onclick="openPanelFunc();return false;"><span class="quick-icon">🛒</span><span class="quick-label">Order Now</span></button>
+    <a href="index.html" class="quick-btn lang-btn" id="lang-btn-sticky" aria-label="Turkish"><span class="quick-icon">🌐</span><span class="quick-label">TR</span></a>
+  </div>
+  <footer>
+    <p>&copy; 2025 Severse Doner | Kalkan <span><a href="https://instagram.com/seversedonerkalkan" target="_blank" rel="noopener" class="instagram-link">@seversedonerkalkan</a></span></p>
+  </footer>
+  <div id="slide-panel-overlay" class="slide-panel-overlay"></div>
+  <div id="slide-panel" class="slide-panel" role="dialog" aria-modal="true" aria-labelledby="slide-panel-title" tabindex="-1">
+    <button id="close-panel" class="slide-panel-close" aria-label="Close">&times;</button>
+    <h2 id="slide-panel-title">Order from QR Menu</h2>
+    <p style="margin-bottom:1em; color:#444;">Add your order note and send easily via WhatsApp.</p>
+    <form id="order-form-en" class="order-form" style="padding:0.5em 0.2em 1em 0.2em;">
+      <div class="menu-category" style="margin-bottom:1.1em;">
+        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Soups</h3>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Lentil Soup (200₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Lentil Soup</span><span class="price">200₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Chicken Broth Soup (250₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Chicken Broth Soup</span><span class="price">250₺</span></div>
+      </div>
+      <div class="menu-category" style="margin-bottom:1.1em;">
+        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Doner Wraps</h3>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Hatay Style Wrap (250₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Hatay Style Wrap</span><span class="price">250₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Double Wrap (400₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Double Wrap</span><span class="price">400₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Doner Plate (350₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Doner Plate</span><span class="price">350₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cheese Doner (300₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cheese Doner</span><span class="price">300₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cheddar Doner (350₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cheddar Doner</span><span class="price">350₺</span></div>
+      </div>
+      <div class="menu-category" style="margin-bottom:1.1em;">
+        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Street Food</h3>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Wet Burger (150₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Wet Burger</span><span class="price">150₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Hot Dog (150₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Hot Dog</span><span class="price">150₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Patso (150₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Patso</span><span class="price">150₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cheese Patso (200₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cheese Patso</span><span class="price">200₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Fries (220₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Fries</span><span class="price">220₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Nuggets & Chips (350₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Nuggets & Chips</span><span class="price">350₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Stuffed Mussels (-)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Stuffed Mussels</span><span class="price">-</span></div>
+      </div>
+      <div class="menu-category" style="margin-bottom:1.1em;">
+        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Beverages</h3>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cola (100₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cola</span><span class="price">100₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Fanta (100₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Fanta</span><span class="price">100₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Gazoz (100₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Gazoz</span><span class="price">100₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Ice Tea (100₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Ice Tea</span><span class="price">100₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Ayran (50₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Ayran</span><span class="price">50₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Şalgam (75₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Şalgam</span><span class="price">75₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Water (50₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Water</span><span class="price">50₺</span></div>
+      </div>
+      <textarea id="order-note-en" placeholder="Add a note (e.g. no spice, extra pickles)" style="width:100%;min-height:48px;margin:0.7em 0 0.5em 0;"></textarea>
+      <button id="whatsapp-send-en" type="button" style="width:100%;background:linear-gradient(90deg,#25d366 60%,#128c7e 100%);color:#fff;font-weight:700;font-size:1.05rem;border:none;border-radius:8px;padding:0.7rem 0;cursor:pointer;">Send Order via WhatsApp</button>
+    </form>
+  </div>
+  <script>
+  const panel = document.getElementById('slide-panel');
+  const overlay = document.getElementById('slide-panel-overlay');
+  if (panel) panel.classList.remove('active');
+  if (overlay) overlay.classList.remove('active');
+  const openPanel = document.getElementById('open-modal');
+  const openPanelDesktop = document.getElementById('open-modal-desktop');
+  const openPanelMobile = document.getElementById('mobile-order-btn');
+  const closePanel = document.getElementById('close-panel');
+  function openPanelFunc() {
+    const panel = document.getElementById('slide-panel');
+    const overlay = document.getElementById('slide-panel-overlay');
+    if (panel && overlay) {
+      panel.classList.add('active');
+      overlay.classList.add('active');
+      panel.focus();
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  function closePanelFunc() {
+    panel.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  if(openPanel) openPanel.onclick = openPanelFunc;
+  if(openPanelDesktop) openPanelDesktop.onclick = openPanelFunc;
+  if(openPanelMobile) openPanelMobile.onclick = openPanelFunc;
+  if(closePanel) closePanel.onclick = closePanelFunc;
+  if(overlay) overlay.onclick = closePanelFunc;
+  document.addEventListener('keydown', function(e) {
+    if (panel.classList.contains('active') && e.key === 'Escape') {
+      closePanelFunc();
+    }
+  });
+
+  document.querySelectorAll('.order-form .qty-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const action = btn.getAttribute('data-action');
+      const qtySpan = btn.parentElement.querySelector('.qty');
+      let value = parseInt(qtySpan.textContent, 10) || 0;
+      if (action === 'inc') value++;
+      if (action === 'dec' && value > 0) value--;
+      qtySpan.textContent = value;
+    });
+  });
+
+  const whatsappSendEn = document.getElementById('whatsapp-send-en');
+  if (whatsappSendEn) {
+    whatsappSendEn.addEventListener('click', function() {
+      let message = 'Severse Doner Order:%0A';
+      let total = 0;
+      document.querySelectorAll('#order-form-en .order-item').forEach(function(item) {
+        const qty = parseInt(item.querySelector('.qty').textContent.trim(), 10) || 0;
+        const name = item.querySelector('.item-name').textContent.trim();
+        const priceText = item.querySelector('.price').textContent.trim();
+        let price = 0;
+        const match = priceText.match(/([0-9]+)[₺TL]*/);
+        if (match) price = parseInt(match[1], 10);
+        if (qty > 0) {
+          message += `${qty} x ${name} (${priceText})%0A`;
+          if (!isNaN(price)) total += qty * price;
+        }
+      });
+      const note = document.getElementById('order-note-en').value.trim();
+      if (note) {
+        message += `%0ANote: ${note}`;
+      }
+      if (total > 0) {
+        message += `%0ATotal: ${total}₺`;
+      }
+      const phone = '905383504563';
+      const url = `https://wa.me/${phone}?text=${message}`;
+      window.open(url, '_blank');
+    });
+  }
+
+  ['open-modal', 'order-btn-sticky'].forEach(function(id) {
+    var btn = document.getElementById(id);
+    if (btn) {
+      btn.onclick = function(e) { e.preventDefault(); openPanelFunc(); return false; };
+    }
+  });
+  </script>
+</body>
+</html> 
