@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkan Döner | Severse Döner - Gece Açık Dönerci, Tavuk & Kuzu Döner, Sokak Lezzetleri</title>
+  <meta name="description" content="Kalkan'da gece açık dönerci: Tavuk ve kuzu döner çeşitleri, ıslak hamburger, sosisli sandviç, cips dürümü ve sokak lezzetleri. Severse Döner ile WhatsApp'tan kolayca sipariş verin.">
+  <meta name="keywords" content="Kalkan döner, Kalkan gece açık dönerci, Kalkan tavuk döner, Kalkan kuzu döner, Kalkan ıslak hamburger, Kalkan sokak lezzetleri, Kalkan fast food, WhatsApp sipariş döner, QR menü döner, Kalkan cips dürüm, Kalkan patates kızartması">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="severselogo.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header class="main-header" role="banner">
+    <div class="header-inner">
+      <a href="#hero" class="header-logo-link" aria-label="Anasayfa">
+        <img src="severselogo.png" alt="Severse Döner Logo" class="header-logo" width="120" height="120">
+      </a>
+      <nav class="main-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="#hero">Anasayfa</a></li>
+          <li><a href="#menu">Menü</a></li>
+          <li><a href="#about">Hakkımızda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="hero-main" id="hero">
+      <div class="hero-content hero-flex-modern">
+        <div class="hero-left-modern">
+          <h1>Kalkan'ın Gece Açık Dönercisi</h1>
+          <p class="hero-desc-modern">Tavuk ve kuzu döner çeşitleri, ıslak hamburger, sosisli sandviç, cips dürümü ve sokak lezzetleri ile geceye lezzet kat!</p>
+          <div class="site-slogan-group">
+            <span class="site-slogan">Şimdi Döner Zamanı!</span>
+            <span class="site-slogan">Sokak lezzetleri burada!</span>
+          </div>
+          <a id="open-modal" class="order-btn-hero-modern2" href="#" onclick="openPanelFunc();return false;">Sipariş Ver</a>
+          <div class="hero-contacts-modern">
+            <a href="tel:+905383504563" class="hero-contact-ico-btn" title="Ara"><span>📞</span></a>
+            <a href="https://wa.me/905383504563" target="_blank" rel="noopener" class="hero-contact-ico-btn" title="WhatsApp"><span>💬</span></a>
+            <a href="https://instagram.com/seversedonerkalkan" target="_blank" rel="noopener" class="hero-contact-ico-btn" title="Instagram"><span>📸</span></a>
+          </div>
+        </div>
+        <div class="hero-right-modern">
+          <img src="Asset/SEVERSEDONER.jpg" alt="Severse Döner Kalkan" class="hero-img-modern" width="420" height="320">
+        </div>
+      </div>
+    </section>
+    <section class="menu-showcase" id="menu">
+      <h2>Menüden Seçmeler</h2>
+      <div class="site-slogan-group">
+        <span class="site-slogan">Döner yemek için tam vakit!</span>
+        <span class="site-slogan">Sokak lezzetleri burada!</span>
+      </div>
+      <div class="menu-categories">
+        <article class="menu-category-block">
+          <h3>Tavuk Döner</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Tavuk Döner Kebap Dürüm" class="menu-img" width="80" height="80">
+              <h4>Tavuk Döner Kebap Dürüm</h4>
+              <p>Lavaş ekmeği, sarımsaklı domates sosu, patates, salatalık turşusu, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">250₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Duble Tavuk Döner Kebap Dürüm" class="menu-img" width="80" height="80">
+              <h4>Duble Tavuk Döner Kebap Dürüm</h4>
+              <p>Lavaş ekmeği, duble tavuk, sarımsaklı domates sosu, patates, salatalık turşusu, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">400₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Pilav Üstü Tavuk Döner" class="menu-img" width="80" height="80">
+              <h4>Pilav Üstü Tavuk Döner</h4>
+              <p>Lavaş ekmeği, pilav ve salata ile servis edilir.</p>
+              <span class="price">350₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Cheddar Peynirli Tavuk Döner Dürüm" class="menu-img" width="80" height="80">
+              <h4>Cheddar Peynirli Tavuk Döner Dürüm</h4>
+              <p>Çedar peyniri, lavaş ekmeği, pilav ve salata ile servis edilir.</p>
+              <span class="price">350₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Kaşar Peynirli Tavuk Döner Dürüm" class="menu-img" width="80" height="80">
+              <h4>Kaşar Peynirli Tavuk Döner Dürüm</h4>
+              <p>Kaşar peyniri, lavaş ekmeği, pilav ve salata ile servis edilir.</p>
+              <span class="price">300₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Patates Cipsli Tavuk Döner Kebap Tabağı" class="menu-img" width="80" height="80">
+              <h4>Patates Cipsli Tavuk Döner Kebap Tabağı</h4>
+              <p>Çıtır patates kızartması yatağında tavuk döner ile servis edilir.</p>
+              <span class="price">400₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="SEVERSE Döner Karışık Dürüm" class="menu-img" width="80" height="80">
+              <h4>SEVERSE Döner Karışık Dürüm</h4>
+              <p>Tavuk, kuzu eti, çedar peyniri, patates, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">500₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="SEVERSE Döner Özel Dürüm" class="menu-img" width="80" height="80">
+              <h4>SEVERSE Döner Özel Dürüm</h4>
+              <p>Lavaş ekmeği, sosis, patates kızartması, çedar peyniri, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">500₺</span>
+            </li>
+          </ul>
+        </article>
+        <article class="menu-category-block">
+          <h3>Kuzu Döner</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Kuzu Döner Kebap Dürüm" class="menu-img" width="80" height="80">
+              <h4>Kuzu Döner Kebap Dürüm</h4>
+              <p>Marul, soğan ve sarımsaklı mayonezle servis edilir.</p>
+              <span class="price">400₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Patates Kızartmalı Kuzu Döner Kebap Tabağı" class="menu-img" width="80" height="80">
+              <h4>Patates Kızartmalı Kuzu Döner Kebap Tabağı</h4>
+              <p>Kıtır patates kızartması yatağında kuzu döner.</p>
+              <span class="price">500₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/doner.png" alt="Kuzu Döner Kebap Tabağı" class="menu-img" width="80" height="80">
+              <h4>Kuzu Döner Kebap Tabağı</h4>
+              <p>Kıtır patates kızartması yatağında kuzu döner.</p>
+              <span class="price">500₺</span>
+            </li>
+          </ul>
+        </article>
+        <article class="menu-category-block">
+          <h3>Sokak Lezzetleri</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Islak Burger" class="menu-img" width="80" height="80">
+              <h4>Islak Burger</h4>
+              <p>Tatlı sarımsaklı domates soslu dana burger ekmeği ve dana burger.</p>
+              <span class="price">200₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/ambalajturuncu.png" alt="Sosisli Sandviç" class="menu-img" width="80" height="80">
+              <h4>Sosisli Sandviç</h4>
+              <p>Sandviç ekmeği, sosis, patates, hardal, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">200₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Cips Dürüm" class="menu-img" width="80" height="80">
+              <h4>Cips Dürüm</h4>
+              <p>Lavaş ekmeği, cips, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">180₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Peynirli Patates Kızartması Dürüm" class="menu-img" width="80" height="80">
+              <h4>Peynirli Patates Kızartması Dürüm</h4>
+              <p>Kaşar peyniri, lavaş ekmeği, cips, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">220₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Çedarlı Patates Kızartması Dürüm" class="menu-img" width="80" height="80">
+              <h4>Çedarlı Patates Kızartması Dürüm</h4>
+              <p>Çedar peyniri, lavaş ekmeği, cips, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">250₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Patates Kızartması" class="menu-img" width="80" height="80">
+              <h4>Patates Kızartması</h4>
+              <p>Ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">250₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Peynirli Patates Kızartması" class="menu-img" width="80" height="80">
+              <h4>Peynirli Patates Kızartması</h4>
+              <p>Kaşar peyniri, ketçap ve sarımsaklı mayonez ile servis edilir.</p>
+              <span class="price">300₺</span>
+            </li>
+          </ul>
+        </article>
+        <article class="menu-category-block">
+          <h3>İçecekler</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Coca Cola" class="menu-img" width="80" height="80">
+              <h4>Coca Cola / Cola Zero</h4>
+              <p>Soğuk içecek.</p>
+              <span class="price">120₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Fanta" class="menu-img" width="80" height="80">
+              <h4>Fanta</h4>
+              <p>Soğuk içecek.</p>
+              <span class="price">120₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Sprite" class="menu-img" width="80" height="80">
+              <h4>Sprite</h4>
+              <p>Soğuk içecek.</p>
+              <span class="price">120₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Ice Tea Peach" class="menu-img" width="80" height="80">
+              <h4>Ice Tea Peach</h4>
+              <p>Soğuk içecek.</p>
+              <span class="price">120₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Ayran" class="menu-img" width="80" height="80">
+              <h4>Ayran</h4>
+              <p>Soğuk içecek.</p>
+              <span class="price">80₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Gazoz" class="menu-img" width="80" height="80">
+              <h4>Gazoz</h4>
+              <p>Soğuk içecek.</p>
+              <span class="price">120₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Soda" class="menu-img" width="80" height="80">
+              <h4>Soda</h4>
+              <p>Soğuk içecek.</p>
+              <span class="price">80₺</span>
+            </li>
+            <li class="menu-card">
+              <img src="Asset/image.png" alt="Su" class="menu-img" width="80" height="80">
+              <h4>Küçük Su</h4>
+              <p>Soğuk içecek.</p>
+              <span class="price">50₺</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="about-compact-block" id="about">
+      <h2>Hakkımızda</h2>
+      <p>Severse Döner, Kalkan'ın merkezinde gece 04:00'e kadar açık olan, taptaze ve hızlı servis anlayışıyla öne çıkan bir fast food restoranıdır. Tavuk ve kuzu döner çeşitleri, ıslak hamburger, sosisli sandviç, cips dürümü, patates kızartması ve daha birçok sokak lezzetini Kalkan'da bulabileceğiniz en doğru adresiz.</p>
+      <p>Gecenin bir vakti acıktığınızda, ister sahilden ister evden, WhatsApp'tan kolayca sipariş verebilir, Kalkan'ın en lezzetli döner ve fast food menüsüne ulaşabilirsiniz. Tüm ürünlerimiz günlük ve özenle hazırlanır, hijyen ve kaliteye büyük önem verilir.</p>
+      <p><strong>Severse Döner 2017'den beri Kalkan'da hizmet veriyor ve kısa süre önce yeni yerine taşındı.</strong></p>
+    </section>
+  </main>
+  <!-- Sticky Quick Panel -->
+  <div class="sticky-quick-panel" aria-label="Hızlı erişim">
+    <button class="quick-btn order-btn" id="order-btn-sticky" aria-label="Sipariş Ver"><span class="quick-icon">🛒</span><span class="quick-label">Sipariş Ver</span></button>
+    <a href="index-en.html" class="quick-btn lang-btn" id="lang-btn-sticky" aria-label="İngilizce"><span class="quick-icon">🌐</span><span class="quick-label">EN</span></a>
+  </div>
+  <footer>
+    <p>&copy; 2025 Severse Döner | Kalkan <span><a href="https://instagram.com/seversedonerkalkan" target="_blank" rel="noopener" class="instagram-link">@seversedonerkalkan</a></span></p>
+  </footer>
+  <!-- WhatsApp Sipariş Paneli -->
+  <div id="slide-panel-overlay" class="slide-panel-overlay"></div>
+  <div id="slide-panel" class="slide-panel" role="dialog" aria-modal="true" aria-labelledby="slide-panel-title" tabindex="-1">
+    <button id="close-panel" class="slide-panel-close" aria-label="Kapat">&times;</button>
+    <form id="order-form-tr" class="order-form">
+      <div class="menu-category" style="margin-bottom:1.1em;">
+        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Tavuk Döner</h3>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Tavuk Döner Kebap Dürüm (250₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Tavuk Döner Kebap Dürüm</span><span class="price">250₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Duble Tavuk Döner Kebap Dürüm (400₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Duble Tavuk Döner Kebap Dürüm</span><span class="price">400₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Pilav Üstü Tavuk Döner (350₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Pilav Üstü Tavuk Döner</span><span class="price">350₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cheddar Peynirli Tavuk Döner Dürüm (350₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cheddar Peynirli Tavuk Döner Dürüm</span><span class="price">350₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Kaşar Peynirli Tavuk Döner Dürüm (300₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Kaşar Peynirli Tavuk Döner Dürüm</span><span class="price">300₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Patates Cipsli Tavuk Döner Kebap Tabağı (400₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Patates Cipsli Tavuk Döner Kebap Tabağı</span><span class="price">400₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="SEVERSE Döner Karışık Dürüm (500₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">SEVERSE Döner Karışık Dürüm</span><span class="price">500₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="SEVERSE Döner Özel Dürüm (500₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">SEVERSE Döner Özel Dürüm</span><span class="price">500₺</span></div>
+      </div>
+      <div class="menu-category" style="margin-bottom:1.1em;">
+        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Kuzu Döner</h3>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Kuzu Döner Kebap Dürüm (400₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Kuzu Döner Kebap Dürüm</span><span class="price">400₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Patates Kızartmalı Kuzu Döner Kebap Tabağı (500₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Patates Kızartmalı Kuzu Döner Kebap Tabağı</span><span class="price">500₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Kuzu Döner Kebap Tabağı (500₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Kuzu Döner Kebap Tabağı</span><span class="price">500₺</span></div>
+      </div>
+      <div class="menu-category" style="margin-bottom:1.1em;">
+        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Sokak Lezzetleri</h3>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Islak Burger (200₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Islak Burger</span><span class="price">200₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Sosisli Sandviç (200₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Sosisli Sandviç</span><span class="price">200₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cips Dürüm (180₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cips Dürüm</span><span class="price">180₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Peynirli Patates Kızartması Dürüm (220₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Peynirli Patates Kızartması Dürüm</span><span class="price">220₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Çedarlı Patates Kızartması Dürüm (250₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Çedarlı Patates Kızartması Dürüm</span><span class="price">250₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Patates Kızartması (250₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Patates Kızartması</span><span class="price">250₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Peynirli Patates Kızartması (300₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Peynirli Patates Kızartması</span><span class="price">300₺</span></div>
+      </div>
+      <div class="menu-category" style="margin-bottom:1.1em;">
+        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">İçecekler</h3>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Coca Cola / Cola Zero (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Coca Cola / Cola Zero</span><span class="price">120₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Fanta (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Fanta</span><span class="price">120₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Sprite (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Sprite</span><span class="price">120₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Ice Tea Peach (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Ice Tea Peach</span><span class="price">120₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Ayran (80₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Ayran</span><span class="price">80₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Gazoz (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Gazoz</span><span class="price">120₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Soda (80₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Soda</span><span class="price">80₺</span></div>
+        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Küçük Su (50₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Küçük Su</span><span class="price">50₺</span></div>
+      </div>
+      <textarea id="order-note-tr" placeholder="Not ekleyin (örn. acısız, bol turşu)" style="width:100%;min-height:48px;margin:0.7em 0 0.5em 0;"></textarea>
+      <button id="whatsapp-send-tr" type="button" style="width:100%;background:linear-gradient(90deg,#25d366 60%,#128c7e 100%);color:#fff;font-weight:700;font-size:1.05rem;border:none;border-radius:8px;padding:0.7rem 0;cursor:pointer;">Siparişi WhatsApp'tan Gönder</button>
+    </form>
+  </div>
+  <script>
+  // Panel kontrolü
+  const panel = document.getElementById('slide-panel');
+  const overlay = document.getElementById('slide-panel-overlay');
+  const closePanel = document.getElementById('close-panel');
+  const openPanel = document.getElementById('open-modal');
+  const orderBtnSticky = document.getElementById('order-btn-sticky');
+  
+  function openPanelFunc() {
+    if (panel && overlay) {
+      panel.classList.add('active');
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  
+  function closePanelFunc() {
+    if (panel && overlay) {
+      panel.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  
+  // Event listeners
+  if (openPanel) openPanel.addEventListener('click', openPanelFunc);
+  if (orderBtnSticky) orderBtnSticky.addEventListener('click', openPanelFunc);
+  if (closePanel) closePanel.addEventListener('click', closePanelFunc);
+  if (overlay) overlay.addEventListener('click', closePanelFunc);
+  
+  // ESC tuşu ile kapatma
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && panel && panel.classList.contains('active')) {
+      closePanelFunc();
+    }
+  });
+
+  // Miktar butonları
+  document.querySelectorAll('.qty-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const action = btn.getAttribute('data-action');
+      const qtySpan = btn.parentElement.querySelector('.qty');
+      let value = parseInt(qtySpan.textContent, 10) || 0;
+      
+      if (action === 'inc') {
+        value++;
+      } else if (action === 'dec' && value > 0) {
+        value--;
+      }
+      
+      qtySpan.textContent = value;
+    });
+  });
+
+  // WhatsApp gönder butonu
+  const whatsappSendTr = document.getElementById('whatsapp-send-tr');
+  if (whatsappSendTr) {
+    whatsappSendTr.addEventListener('click', function() {
+      let message = '🛒 *Severse Döner Siparişi*%0A%0A';
+      let total = 0;
+      let hasItems = false;
+
+      // Sipariş edilen ürünleri topla
+      document.querySelectorAll('#order-form-tr .order-item').forEach(function(item) {
+        const qty = parseInt(item.querySelector('.qty').textContent.trim(), 10) || 0;
+        const name = item.querySelector('.item-name').textContent.trim();
+        const priceText = item.querySelector('.price').textContent.trim();
+        
+        if (qty > 0) {
+          hasItems = true;
+          let price = 0;
+          const match = priceText.match(/([0-9]+)[₺TL]*/);
+          if (match) price = parseInt(match[1], 10);
+          
+          message += `• ${qty}x ${name} - ${priceText}%0A`;
+          if (!isNaN(price)) total += qty * price;
+        }
+      });
+
+      // Not ekle
+      const note = document.getElementById('order-note-tr').value.trim();
+      if (note) {
+        message += `%0A📝 *Not:* ${note}`;
+      }
+
+      // Toplam ekle
+      if (total > 0) {
+        message += `%0A%0A💰 *Toplam: ${total}₺*`;
+      }
+
+      // Sipariş varsa gönder
+      if (hasItems) {
+        message += `%0A%0A📍 Kalkan Adresi: [Adres bilgisi eklenebilir]`;
+        const phone = '905383504563';
+        const url = `https://wa.me/${phone}?text=${message}`;
+        window.open(url, '_blank');
+        
+        // Panel kapat
+        closePanelFunc();
+      } else {
+        alert('Lütfen en az bir ürün seçiniz!');
+      }
+    });
+  }
+  </script>
+</body>
+</html> 
+</html> 
