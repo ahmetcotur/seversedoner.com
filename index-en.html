@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalkan Doner | Severse Doner - Late Night Doner, Chicken & Lamb Doner, Street Food Classics</title>
-  <meta name="description" content="Late night doner in Kalkan: Chicken and lamb doner varieties, wet burger, sausage sandwich, chips wrap and street food classics. Order easily via WhatsApp with Severse Doner.">
-  <meta name="keywords" content="Kalkan doner, Kalkan late night doner, Kalkan chicken doner, Kalkan lamb doner, Kalkan wet burger, Kalkan street food, Kalkan fast food, WhatsApp order doner, QR menu doner, Kalkan chips wrap, Kalkan French fries">
+  <title>Severse Doner & Pizza Kalkan | Late Night Doner & Pizza Salon</title>
+  <meta name="description" content="Late night doner and pizza in Kalkan, open until 04:00 AM. Chicken wraps, lamb wraps, rich pizza selections, fresh salads and crispy street food classics. Order easily via WhatsApp.">
+  <meta name="keywords" content="Kalkan doner, Kalkan late night food, Kalkan pizza, Kalkan chicken wrap, Kalkan lamb wrap, Kalkan street food, fast food Kalkan, WhatsApp order doner, QR menu doner, Severse Doner, Kalkan salad options">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="severselogo.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -14,7 +14,7 @@
   <header class="main-header" role="banner">
     <div class="header-inner">
       <a href="#hero" class="header-logo-link" aria-label="Homepage">
-        <img src="severselogo.png" alt="Severse Doner Logo" class="header-logo" width="120" height="120">
+        <img src="severselogo.png" alt="Severse Doner & Pizza Logo" class="header-logo" width="120" height="120">
       </a>
       <nav class="main-nav" aria-label="Main menu">
         <ul>
@@ -25,360 +25,1189 @@
       </nav>
     </div>
   </header>
+
   <main id="main-content">
+    <!-- Hero Section -->
     <section class="hero-main" id="hero">
-      <div class="hero-content hero-flex-modern">
+      <div class="hero-content">
         <div class="hero-left-modern">
-          <h1>Kalkan's Late Night Doner</h1>
-          <p class="hero-desc-modern">Chicken and lamb doner varieties, wet burger, sausage sandwich, chips wrap and street food classics to spice up your night!</p>
           <div class="site-slogan-group">
-            <span class="site-slogan">It's Doner Time!</span>
-            <span class="site-slogan">Street food classics here!</span>
+            <span class="site-slogan">🔥 Flame Grilled Doner & Pizza</span>
+            <span class="site-slogan">🕒 Open Until 04:00 AM</span>
           </div>
-          <a id="open-modal" class="order-btn-hero-modern2" href="#" onclick="openPanelFunc();return false;">Order Now</a>
+          <h1>Kalkan's Finest <span>Late Night Doner & Pizzas</span></h1>
+          <p class="hero-desc-modern">Taste our freshly wrapped chicken and lamb doner, piping hot stone-baked pizzas, healthy fresh salads and street food favorites. Order late-night cravings in seconds!</p>
+          <div class="hero-actions">
+            <button class="order-btn-hero-modern2" onclick="openPanelFunc(); return false;">🛒 Order Now</button>
+            <a href="#menu" class="explore-menu-btn">📋 Explore Menu</a>
+          </div>
           <div class="hero-contacts-modern">
-            <a href="tel:+905383504563" class="hero-contact-ico-btn" title="Call"><span>📞</span></a>
-            <a href="https://wa.me/905383504563" target="_blank" rel="noopener" class="hero-contact-ico-btn" title="WhatsApp"><span>💬</span></a>
-            <a href="https://instagram.com/seversedonerkalkan" target="_blank" rel="noopener" class="hero-contact-ico-btn" title="Instagram"><span>📸</span></a>
+            <a href="tel:+905383504563" class="hero-contact-ico-btn" title="Call Us"><span>📞</span></a>
+            <a href="https://wa.me/905383504563" target="_blank" rel="noopener" class="hero-contact-ico-btn" title="Send WhatsApp Message"><span>💬</span></a>
+            <a href="https://instagram.com/seversedonerkalkan" target="_blank" rel="noopener" class="hero-contact-ico-btn" title="Instagram Profile"><span>📸</span></a>
           </div>
         </div>
         <div class="hero-right-modern">
-          <img src="Asset/SEVERSEDONER.jpg" alt="Severse Doner Kalkan" class="hero-img-modern" width="420" height="320">
+          <div class="hero-img-container">
+            <img src="Asset/SEVERSEDONER.jpg" alt="Severse Doner Kalkan" class="hero-img-modern" width="420" height="320">
+          </div>
         </div>
       </div>
     </section>
-    <section class="menu-showcase" id="menu">
-      <h2>Menu Highlights</h2>
-      <div class="site-slogan-group">
-        <span class="site-slogan">Perfect time for doner!</span>
-        <span class="site-slogan">Street food classics here!</span>
+
+    <!-- Category Selector Bar -->
+    <div class="category-nav-wrapper">
+      <div class="category-nav-inner">
+        <button class="category-tab-btn active" data-target="all">All</button>
+        <button class="category-tab-btn" data-target="chicken-doner">Chicken Doner</button>
+        <button class="category-tab-btn" data-target="lamb-doner">Lamb Doner</button>
+        <button class="category-tab-btn" data-target="pizza">Pizzas</button>
+        <button class="category-tab-btn" data-target="salad">Salads</button>
+        <button class="category-tab-btn" data-target="street-food">Street Foods</button>
+        <button class="category-tab-btn" data-target="drinks">Drinks</button>
       </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="menu-showcase" id="menu">
+      <div class="menu-section-header">
+        <h2>QR Menu</h2>
+        <p>Add items to your cart and send your customized order directly via WhatsApp.</p>
+      </div>
+
       <div class="menu-categories">
-        <article class="menu-category-block">
+        <!-- Chicken Doner -->
+        <article class="menu-category-block" data-id="chicken-doner">
           <h3>Chicken Doner</h3>
           <ul class="menu-grid" role="list">
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Chicken Doner Kebab Wrap" class="menu-img" width="80" height="80">
-              <h4>Chicken Doner Kebab Wrap</h4>
-              <p>Served with lavash bread, tomato, garlic sauce, potato, gherkins, ketchup and garlic mayonnaise.</p>
-              <span class="price">250₺</span>
+            <li class="menu-card" data-id="chicken-small" data-name="Small Chicken Döner Wrap" data-price="350">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/doner.png" alt="Small Chicken Döner Wrap" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Small Chicken Döner Wrap</h4>
+                  <p>Served with lavash bread, potato, gherkins, ketchup and garlic mayonnaise.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">350₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('chicken-small')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-chicken-small">
+                    <button onclick="changeQty('chicken-small', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('chicken-small', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Double Chicken Doner Kebab Wrap" class="menu-img" width="80" height="80">
-              <h4>Double Chicken Doner Kebab Wrap</h4>
-              <p>Served with lavash bread, double chicken, tomato, garlic sauce, potato, gherkins, ketchup and garlic mayonnaise.</p>
-              <span class="price">400₺</span>
+            <li class="menu-card" data-id="chicken-large" data-name="Large Chicken Döner Wrap" data-price="450">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/doner.png" alt="Large Chicken Döner Wrap" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Large Chicken Döner Wrap</h4>
+                  <p>Served with lavash bread, potato, gherkins, ketchup and garlic mayonnaise.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">450₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('chicken-large')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-chicken-large">
+                    <button onclick="changeQty('chicken-large', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('chicken-large', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Chicken Doner Kebab Plate" class="menu-img" width="80" height="80">
-              <h4>Chicken Doner Kebab Plate</h4>
-              <p>Served with lavash bread, rice and salad.</p>
-              <span class="price">350₺</span>
+            <li class="menu-card" data-id="chicken-chips" data-name="Chicken Döner with Chips" data-price="500">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/doner.png" alt="Chicken Döner with Chips" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Chicken Döner with Chips</h4>
+                  <p>Served with chicken döner on a bed of crispy chips.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">500₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('chicken-chips')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-chicken-chips">
+                    <button onclick="changeQty('chicken-chips', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('chicken-chips', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Chicken Doner Kebab Wrap with Cheddar Cheese" class="menu-img" width="80" height="80">
-              <h4>Chicken Doner Kebab Wrap with Cheddar Cheese</h4>
-              <p>Served with cheddar cheese, lavash bread, rice and salad.</p>
-              <span class="price">350₺</span>
-            </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Chicken Doner Kebab Wrap with Yellow Cheese" class="menu-img" width="80" height="80">
-              <h4>Chicken Doner Kebab Wrap with Yellow Cheese</h4>
-              <p>Served with yellow cheese, lavash bread, rice and salad.</p>
-              <span class="price">300₺</span>
-            </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Chicken Doner Kebab with Chips Plate" class="menu-img" width="80" height="80">
-              <h4>Chicken Doner Kebab with Chips Plate</h4>
-              <p>Served with chicken doner on a bed of crispy chips.</p>
-              <span class="price">400₺</span>
-            </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="SEVERSE Doner Mix Wrap" class="menu-img" width="80" height="80">
-              <h4>SEVERSE Doner Mix Wrap</h4>
-              <p>Served with chicken, lamb, cheddar cheese, potato, ketchup and garlic mayonnaise.</p>
-              <span class="price">500₺</span>
-            </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="SEVERSE Doner Special Wrap" class="menu-img" width="80" height="80">
-              <h4>SEVERSE Doner Special Wrap</h4>
-              <p>Served with lavash bread, sausage, chips, cheddar cheese, ketchup and garlic mayonnaise.</p>
-              <span class="price">500₺</span>
+            <li class="menu-card" data-id="chicken-mix" data-name="Severse Döner Special Wrap (Mix)" data-price="600">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/doner.png" alt="Severse Döner Special Wrap (Mix)" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Severse Döner Special Wrap (Mix)</h4>
+                  <p>Served with chicken döner, lamb döner, cheddar cheese, potato, ketchup and mayonnaise.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">600₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('chicken-mix')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-chicken-mix">
+                    <button onclick="changeQty('chicken-mix', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('chicken-mix', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </article>
-        <article class="menu-category-block">
+
+        <!-- Lamb Doner -->
+        <article class="menu-category-block" data-id="lamb-doner">
           <h3>Lamb Doner</h3>
           <ul class="menu-grid" role="list">
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Lamb Doner Kebab Wrap" class="menu-img" width="80" height="80">
-              <h4>Lamb Doner Kebab Wrap</h4>
-              <p>Served with lettuce, onion and garlic mayonnaise.</p>
-              <span class="price">400₺</span>
+            <li class="menu-card" data-id="lamb-small" data-name="Small Lamb Döner Wrap" data-price="450">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/doner.png" alt="Small Lamb Döner Wrap" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Small Lamb Döner Wrap</h4>
+                  <p>Served with lettuce, onion and garlic mayonnaise.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">450₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('lamb-small')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-lamb-small">
+                    <button onclick="changeQty('lamb-small', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('lamb-small', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Lamb Doner Kebab with Chips Plate" class="menu-img" width="80" height="80">
-              <h4>Lamb Doner Kebab with Chips Plate</h4>
-              <p>Lamb doner on a bed of crispy chips.</p>
-              <span class="price">500₺</span>
+            <li class="menu-card" data-id="lamb-large" data-name="Large Lamb Döner Wrap" data-price="600">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/doner.png" alt="Large Lamb Döner Wrap" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Large Lamb Döner Wrap</h4>
+                  <p>Served with lettuce, onion and garlic mayonnaise.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">600₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('lamb-large')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-lamb-large">
+                    <button onclick="changeQty('lamb-large', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('lamb-large', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/doner.png" alt="Lamb Doner Kebab Plate" class="menu-img" width="80" height="80">
-              <h4>Lamb Doner Kebab Plate</h4>
-              <p>Lamb doner on a bed of crispy chips.</p>
-              <span class="price">500₺</span>
+            <li class="menu-card" data-id="lamb-chips" data-name="Lamb Döner with Chips" data-price="750">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/doner.png" alt="Lamb Döner with Chips" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Lamb Döner with Chips</h4>
+                  <p>Lamb döner served on a bed of crispy chips.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">750₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('lamb-chips')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-lamb-chips">
+                    <button onclick="changeQty('lamb-chips', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('lamb-chips', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </article>
-        <article class="menu-category-block">
-          <h3>Street Food Classics</h3>
+
+        <!-- Pizzas -->
+        <article class="menu-category-block" data-id="pizza">
+          <h3>Pizzas</h3>
           <ul class="menu-grid" role="list">
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Wet Burger" class="menu-img" width="80" height="80">
-              <h4>Wet Burger</h4>
-              <p>Beef burger and burger bread with sweet tomato garlic sauce.</p>
-              <span class="price">200₺</span>
+            <li class="menu-card" data-id="pizza-veggie" data-name="Vegetarian Pizza" data-price="500">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Vegetarian Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Vegetarian Pizza</h4>
+                  <p>Mozzarella, mushroom, onion, peppers, sweet corn and cherry tomatoes.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">500₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-veggie')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-veggie">
+                    <button onclick="changeQty('pizza-veggie', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-veggie', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/ambalajturuncu.png" alt="Hot Dog" class="menu-img" width="80" height="80">
-              <h4>Hot Dog</h4>
-              <p>Served with sandwich bread, sausage, potato, mustard, ketchup and garlic mayonnaise.</p>
-              <span class="price">200₺</span>
+            <li class="menu-card" data-id="pizza-margherita" data-name="Margherita Pizza" data-price="500">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Margherita Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Margherita Pizza</h4>
+                  <p>Served with mozzarella cheese, cherry tomatoes and basil.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">500₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-margherita')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-margherita">
+                    <button onclick="changeQty('pizza-margherita', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-margherita', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Chips Wrap" class="menu-img" width="80" height="80">
-              <h4>Chips Wrap</h4>
-              <p>Served with lavash bread, chips, ketchup and garlic mayonnaise.</p>
-              <span class="price">180₺</span>
+            <li class="menu-card" data-id="pizza-fourcheese" data-name="Four Cheese Pizza" data-price="650">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Four Cheese Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Four Cheese Pizza</h4>
+                  <p>Mozzarella, cheddar, parmesan and traditional yellow cheese.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">650₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-fourcheese')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-fourcheese">
+                    <button onclick="changeQty('pizza-fourcheese', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-fourcheese', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Cheesy Chips Wrap" class="menu-img" width="80" height="80">
-              <h4>Cheesy Chips Wrap</h4>
-              <p>Served with yellow cheese, lavash bread, chips, ketchup and garlic mayonnaise.</p>
-              <span class="price">220₺</span>
+            <li class="menu-card" data-id="pizza-seafood" data-name="Seafood Pizza" data-price="850">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Seafood Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Seafood Pizza</h4>
+                  <p>Served with mozzarella, tuna, prawns, corn and onion.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">850₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-seafood')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-seafood">
+                    <button onclick="changeQty('pizza-seafood', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-seafood', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Cheddar Chips Wrap" class="menu-img" width="80" height="80">
-              <h4>Cheddar Chips Wrap</h4>
-              <p>Served with cheddar cheese, lavash bread, chips, ketchup and garlic mayonnaise.</p>
-              <span class="price">250₺</span>
+            <li class="menu-card" data-id="pizza-sausage" data-name="Super Sausage Pizza" data-price="850">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Super Sausage Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Super Sausage Pizza</h4>
+                  <p>Served with double sausage, mozzarella and cheddar.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">850₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-sausage')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-sausage">
+                    <button onclick="changeQty('pizza-sausage', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-sausage', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="French Fries" class="menu-img" width="80" height="80">
-              <h4>French Fries</h4>
-              <p>Served with ketchup and garlic mayonnaise.</p>
-              <span class="price">250₺</span>
+            <li class="menu-card" data-id="pizza-supreme" data-name="Pizza Supreme" data-price="650">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Pizza Supreme" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Pizza Supreme</h4>
+                  <p>Mozzarella, Turkish sausage (sucuk), mushrooms and sweetcorn.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">650₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-supreme')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-supreme">
+                    <button onclick="changeQty('pizza-supreme', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-supreme', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Cheesy Chips" class="menu-img" width="80" height="80">
-              <h4>Cheesy Chips</h4>
-              <p>Served with yellow cheese ketchup and garlic mayonnaise.</p>
-              <span class="price">300₺</span>
+            <li class="menu-card" data-id="pizza-chicken" data-name="Chicken Döner Pizza" data-price="650">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Chicken Döner Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Chicken Döner Pizza</h4>
+                  <p>Mozzarella, chicken döner, green peppers and onion.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">650₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-chicken')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-chicken">
+                    <button onclick="changeQty('pizza-chicken', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-chicken', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="pizza-lamb" data-name="Lamb Döner Pizza" data-price="700">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Lamb Döner Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Lamb Döner Pizza</h4>
+                  <p>Mozzarella, lamb döner, green peppers and onion.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">700₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-lamb')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-lamb">
+                    <button onclick="changeQty('pizza-lamb', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-lamb', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="pizza-ribs" data-name="Ribs Special Pizza" data-price="850">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Ribs Special Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Ribs Special Pizza</h4>
+                  <p>Smoked beef ribs, mozzarella, parmesan and fresh rocket.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">850₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-ribs')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-ribs">
+                    <button onclick="changeQty('pizza-ribs', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-ribs', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="pizza-special" data-name="Severse Special Pizza" data-price="850">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Severse Special Pizza" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Severse Special Pizza</h4>
+                  <p>Mozzarella, sausage, lamb döner and chicken döner.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">850₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('pizza-special')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-pizza-special">
+                    <button onclick="changeQty('pizza-special', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('pizza-special', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </article>
-        <article class="menu-category-block">
+
+        <!-- Salads -->
+        <article class="menu-category-block" data-id="salad">
+          <h3>Salads</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card" data-id="salad-green" data-name="Green Salad" data-price="300">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Green Salad" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Green Salad</h4>
+                  <p>Served with lettuce, onion, cherry tomatoes, sweetcorn, carrot and olive oil.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">300₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('salad-green')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-salad-green">
+                    <button onclick="changeQty('salad-green', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('salad-green', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="salad-feta" data-name="Feta Cheese Salad" data-price="350">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Feta Cheese Salad" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Feta Cheese Salad</h4>
+                  <p>Served with lettuce, onion, cherry tomatoes, sweetcorn, carrot and olive oil.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">350₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('salad-feta')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-salad-feta">
+                    <button onclick="changeQty('salad-feta', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('salad-feta', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="salad-tuna" data-name="Tuna Salad" data-price="400">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Tuna Salad" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Tuna Salad</h4>
+                  <p>Served with tuna, lettuce, onion, cherry tomatoes, sweetcorn, carrot and olive oil.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">400₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('salad-tuna')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-salad-tuna">
+                    <button onclick="changeQty('salad-tuna', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('salad-tuna', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="salad-chicken" data-name="Chicken Salad" data-price="400">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Chicken Salad" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Chicken Salad</h4>
+                  <p>Served with chicken döner, lettuce, onion, cherry tomatoes, sweetcorn, carrot and olive oil.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">400₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('salad-chicken')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-salad-chicken">
+                    <button onclick="changeQty('salad-chicken', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('salad-chicken', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Street Foods -->
+        <article class="menu-category-block" data-id="street-food">
+          <h3>Street Foods</h3>
+          <ul class="menu-grid" role="list">
+            <li class="menu-card" data-id="street-fries" data-name="French Fries" data-price="300">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="French Fries" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>French Fries</h4>
+                  <p>Crispy fries served with ketchup and garlic mayonnaise.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">300₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('street-fries')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-street-fries">
+                    <button onclick="changeQty('street-fries', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('street-fries', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="street-cheesy" data-name="Cheesy Chips" data-price="350">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Cheesy Chips" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Cheesy Chips</h4>
+                  <p>French fries topped with yellow cheese, ketchup and garlic mayonnaise.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">350₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('street-cheesy')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-street-cheesy">
+                    <button onclick="changeQty('street-cheesy', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('street-cheesy', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="street-nuggets" data-name="Chicken Nuggets & Chips" data-price="400">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Chicken Nuggets & Chips" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Chicken Nuggets & Chips</h4>
+                  <p>Crispy chicken nuggets and golden French fries.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">400₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('street-nuggets')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-street-nuggets">
+                    <button onclick="changeQty('street-nuggets', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('street-nuggets', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-card" data-id="street-nuggets-cheese" data-name="Nugget, Chips & Cheese" data-price="450">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Nugget, Chips & Cheese" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Nugget, Chips & Cheese</h4>
+                  <p>Chicken nuggets, crispy fries and melted cheddar sauce.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">450₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('street-nuggets-cheese')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-street-nuggets-cheese">
+                    <button onclick="changeQty('street-nuggets-cheese', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('street-nuggets-cheese', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Drinks -->
+        <article class="menu-category-block" data-id="drinks">
           <h3>Drinks</h3>
           <ul class="menu-grid" role="list">
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Coca Cola" class="menu-img" width="80" height="80">
-              <h4>Coca Cola / Cola Zero</h4>
-              <p>Cold beverage.</p>
-              <span class="price">120₺</span>
+            <li class="menu-card" data-id="drink-cola" data-name="Coca Cola" data-price="150">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Coca Cola" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Coca Cola</h4>
+                  <p>Cold can soda.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">150₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('drink-cola')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-drink-cola">
+                    <button onclick="changeQty('drink-cola', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('drink-cola', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Fanta" class="menu-img" width="80" height="80">
-              <h4>Fanta</h4>
-              <p>Cold beverage.</p>
-              <span class="price">120₺</span>
+            <li class="menu-card" data-id="drink-zero" data-name="Coke Zero" data-price="150">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Coke Zero" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Coke Zero</h4>
+                  <p>Sugar-free cold can soda.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">150₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('drink-zero')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-drink-zero">
+                    <button onclick="changeQty('drink-zero', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('drink-zero', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Sprite" class="menu-img" width="80" height="80">
-              <h4>Sprite</h4>
-              <p>Cold beverage.</p>
-              <span class="price">120₺</span>
+            <li class="menu-card" data-id="drink-fanta" data-name="Fanta" data-price="150">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Fanta" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Fanta</h4>
+                  <p>Cold orange can soda.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">150₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('drink-fanta')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-drink-fanta">
+                    <button onclick="changeQty('drink-fanta', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('drink-fanta', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Ice Tea Peach" class="menu-img" width="80" height="80">
-              <h4>Ice Tea Peach</h4>
-              <p>Cold beverage.</p>
-              <span class="price">120₺</span>
+            <li class="menu-card" data-id="drink-sprite" data-name="Sprite" data-price="150">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Sprite" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Sprite</h4>
+                  <p>Cold lemon-lime can soda.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">150₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('drink-sprite')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-drink-sprite">
+                    <button onclick="changeQty('drink-sprite', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('drink-sprite', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Ayran" class="menu-img" width="80" height="80">
-              <h4>Ayran</h4>
-              <p>Cold beverage.</p>
-              <span class="price">80₺</span>
+            <li class="menu-card" data-id="drink-icetea" data-name="Ice Tea Peach" data-price="150">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Ice Tea Peach" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Ice Tea Peach</h4>
+                  <p>Cold peach flavored ice tea.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">150₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('drink-icetea')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-drink-icetea">
+                    <button onclick="changeQty('drink-icetea', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('drink-icetea', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Gazoz" class="menu-img" width="80" height="80">
-              <h4>Gazoz</h4>
-              <p>Cold beverage.</p>
-              <span class="price">120₺</span>
+            <li class="menu-card" data-id="drink-ayran" data-name="Ayran" data-price="100">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Ayran" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Ayran</h4>
+                  <p>Traditional cold yogurt drink.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">100₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('drink-ayran')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-drink-ayran">
+                    <button onclick="changeQty('drink-ayran', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('drink-ayran', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Sparkling Water" class="menu-img" width="80" height="80">
-              <h4>Sparkling Water / Soda</h4>
-              <p>Cold beverage.</p>
-              <span class="price">80₺</span>
-            </li>
-            <li class="menu-card">
-              <img src="Asset/image.png" alt="Small Water" class="menu-img" width="80" height="80">
-              <h4>Small Water</h4>
-              <p>Cold beverage.</p>
-              <span class="price">50₺</span>
+            <li class="menu-card" data-id="drink-water" data-name="Small Water" data-price="50">
+              <div class="menu-card-top">
+                <div class="menu-img-container">
+                  <img src="Asset/image.png" alt="Small Water" class="menu-img" width="90" height="90">
+                </div>
+                <div class="menu-info">
+                  <h4>Small Water</h4>
+                  <p>Cold bottled spring water.</p>
+                </div>
+              </div>
+              <div class="menu-card-bottom">
+                <span class="price">50₺</span>
+                <div class="card-action">
+                  <button class="add-to-cart-btn" onclick="addToCart('drink-water')">➕ Add</button>
+                  <div class="qty-control-pill" id="qty-ctrl-drink-water">
+                    <button onclick="changeQty('drink-water', -1)">-</button>
+                    <span class="qty-val">0</span>
+                    <button onclick="changeQty('drink-water', 1)">+</button>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </article>
       </div>
     </section>
-    <section class="about" id="about">
-      <h2>About Us</h2>
-      <p>Severse Doner is a fast food restaurant in the center of Kalkan, open until 4:00 AM, known for its fresh and fast service. We are the best address in Kalkan for chicken and lamb doner varieties, wet burger, hot dog, chips wrap, French fries and many more street food classics. When you get hungry late at night, you can easily order via WhatsApp from the beach or home and reach the most delicious doner and fast food menu in Kalkan. All our products are prepared daily and with care, and we attach great importance to hygiene and quality. If you are looking for doner, street food classics and drinks in Kalkan, Severse Doner is waiting for you!</p>
-      <p><strong>Severse Doner has been serving in Kalkan since 2017 and has recently moved to its new location.</strong></p>
-      <div class="seo-block">
-        Seversedöner offers chicken and lamb döner varieties in Kalkan, serving late-night döner, wet burgers, hot dogs, sausage sandwiches, and chips wrap varieties. Our street food classics menu features wet burger, hot dog, cheesy and cheddar chips wrap, French fries, along with fast food combos and WhatsApp order döner options. We prepare Kalkan chicken wraps, double chicken wraps, cheesy and cheddar döner, plus rice plate doner and special mix wraps. Complement your meal with fresh drinks such as Coca Cola, Fanta, Sprite, Ice Tea Peach, ayran, soda, and water.
+
+    <!-- About Section -->
+    <section class="about-compact-block" id="about">
+      <div class="about-inner">
+        <h2>About Us</h2>
+        <p>Severse Doner & Pizza is a popular culinary spot in the heart of Kalkan, serving customers until 04:00 AM with a reputation for fresh ingredients and lightning-fast service. Since 2017, we have been crafting delicious chicken and lamb wraps, piping hot stone-baked pizzas, healthy fresh salads and street food favorites like French fries without compromising on quality.</p>
+        <p>Whenever you feel hungry late at night, you can easily place an order via WhatsApp from the beach or your home, accessing Kalkan's most modern QR menu instantly. All our dishes are prepared daily in compliance with strict hygiene standards using hand-picked ingredients. We look forward to welcoming you at our recently opened new location!</p>
+        <p><strong>Severse Doner & Pizza, serving flavor in Kalkan since 2017!</strong></p>
+        <div class="seo-block">
+          Kalkan doner delivery, Kalkan late night food, Kalkan pizza order, Kalkan fast food diner, Kalkan lamb wrap, Kalkan chicken wrap, Kalkan French fries, Severse Doner Kalkan, Kalkan stone baked pizza, Kalkan fresh salads, WhatsApp order fast food, Kalkan QR menu.
+        </div>
       </div>
     </section>
   </main>
+
   <!-- Sticky Quick Panel -->
   <div class="sticky-quick-panel" aria-label="Quick access">
-    <button class="quick-btn order-btn" id="order-btn-sticky" aria-label="Order Now" onclick="openPanelFunc();return false;"><span class="quick-icon">🛒</span><span class="quick-label">Order Now</span></button>
-    <a href="index.html" class="quick-btn lang-btn" id="lang-btn-sticky" aria-label="Turkish"><span class="quick-icon">🌐</span><span class="quick-label">TR</span></a>
+    <button class="quick-btn order-btn" id="order-btn-sticky" aria-label="Open Cart" onclick="openPanelFunc(); return false;">
+      <span class="quick-icon">🛒</span>
+      <span class="quick-label">Cart</span>
+      <span id="cart-badge" class="cart-badge-count" style="display: none;">0</span>
+    </button>
+    <a href="index.html" class="quick-btn lang-btn" id="lang-btn-sticky" aria-label="Turkish Version">
+      <span class="quick-icon">🌐</span>
+      <span class="quick-label">TR</span>
+    </a>
   </div>
+
   <footer>
-    <p>&copy; 2025 Severse Doner | Kalkan <span><a href="https://instagram.com/seversedonerkalkan" target="_blank" rel="noopener" class="instagram-link">@seversedonerkalkan</a></span></p>
+    <p>&copy; 2026 Severse Doner & Pizza | Kalkan</p>
+    <p><a href="https://instagram.com/seversedonerkalkan" target="_blank" rel="noopener" class="instagram-link">@seversedonerkalkan</a></p>
   </footer>
+
+  <!-- WhatsApp Sipariş Paneli -->
   <div id="slide-panel-overlay" class="slide-panel-overlay"></div>
   <div id="slide-panel" class="slide-panel" role="dialog" aria-modal="true" aria-labelledby="slide-panel-title" tabindex="-1">
-    <button id="close-panel" class="slide-panel-close" aria-label="Close">&times;</button>
-    <h2 id="slide-panel-title">Order from QR Menu</h2>
-    <p style="margin-bottom:1em; color:#444;">Add your order note and send easily via WhatsApp.</p>
-    <form id="order-form-en" class="order-form" style="padding:0.5em 0.2em 1em 0.2em;">
-      <div class="menu-category" style="margin-bottom:1.1em;">
-        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Chicken Doner</h3>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Chicken Doner Kebab Wrap (250₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Chicken Doner Kebab Wrap</span><span class="price">250₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Double Chicken Doner Kebab Wrap (400₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Double Chicken Doner Kebab Wrap</span><span class="price">400₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Chicken Doner Kebab Plate (350₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Chicken Doner Kebab Plate</span><span class="price">350₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Chicken Doner Kebab Wrap with Cheddar Cheese (350₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Chicken Doner Kebab Wrap with Cheddar Cheese</span><span class="price">350₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Chicken Doner Kebab Wrap with Yellow Cheese (300₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Chicken Doner Kebab Wrap with Yellow Cheese</span><span class="price">300₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Chicken Doner Kebab with Chips Plate (400₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Chicken Doner Kebab with Chips Plate</span><span class="price">400₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="SEVERSE Doner Mix Wrap (500₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">SEVERSE Doner Mix Wrap</span><span class="price">500₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="SEVERSE Doner Special Wrap (500₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">SEVERSE Doner Special Wrap</span><span class="price">500₺</span></div>
+    <div class="slide-panel-header">
+      <div>
+        <h2 id="slide-panel-title">🛒 Your Cart</h2>
+        <p>Customize your order and send via WhatsApp.</p>
       </div>
-      <div class="menu-category" style="margin-bottom:1.1em;">
-        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Lamb Doner</h3>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Lamb Doner Kebab Wrap (400₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Lamb Doner Kebab Wrap</span><span class="price">400₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Lamb Doner Kebab with Chips Plate (500₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Lamb Doner Kebab with Chips Plate</span><span class="price">500₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Lamb Doner Kebab Plate (500₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Lamb Doner Kebab Plate</span><span class="price">500₺</span></div>
+      <button id="close-panel" class="slide-panel-close" aria-label="Close" onclick="closePanelFunc()">&times;</button>
+    </div>
+    
+    <div class="cart-body" id="cart-items-container">
+      <!-- JavaScript dynamic items -->
+    </div>
+    
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Total Price:</span>
+        <span id="cart-total-price" class="cart-total-value">0₺</span>
       </div>
-      <div class="menu-category" style="margin-bottom:1.1em;">
-        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Street Food Classics</h3>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Wet Burger (200₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Wet Burger</span><span class="price">200₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Hot Dog (200₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Hot Dog</span><span class="price">200₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Chips Wrap (180₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Chips Wrap</span><span class="price">180₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cheesy Chips Wrap (220₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cheesy Chips Wrap</span><span class="price">220₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cheddar Chips Wrap (250₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cheddar Chips Wrap</span><span class="price">250₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="French Fries (250₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">French Fries</span><span class="price">250₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Cheesy Chips (300₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Cheesy Chips</span><span class="price">300₺</span></div>
-      </div>
-      <div class="menu-category" style="margin-bottom:1.1em;">
-        <h3 style="font-size:1.1em;margin-bottom:0.5em;color:#ff7043;">Drinks</h3>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Coca Cola / Cola Zero (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Coca Cola / Cola Zero</span><span class="price">120₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Fanta (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Fanta</span><span class="price">120₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Sprite (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Sprite</span><span class="price">120₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Ice Tea Peach (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Ice Tea Peach</span><span class="price">120₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Ayran (80₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Ayran</span><span class="price">80₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Gazoz (120₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Gazoz</span><span class="price">120₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Sparkling Water / Soda (80₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Sparkling Water / Soda</span><span class="price">80₺</span></div>
-        <div class="order-item" style="font-size:0.98em;padding:0.3em 0;"><span class="qty-group"><button type="button" class="qty-btn" data-action="dec">-</button><span class="qty" data-item="Small Water (50₺)">0</span><button type="button" class="qty-btn" data-action="inc">+</button></span><span class="item-name">Small Water</span><span class="price">50₺</span></div>
-      </div>
-      <textarea id="order-note-en" placeholder="Add a note (e.g. no spice, extra pickles)" style="width:100%;min-height:48px;margin:0.7em 0 0.5em 0;"></textarea>
-      <button id="whatsapp-send-en" type="button" style="width:100%;background:linear-gradient(90deg,#25d366 60%,#128c7e 100%);color:#fff;font-weight:700;font-size:1.05rem;border:none;border-radius:8px;padding:0.7rem 0;cursor:pointer;">Send Order via WhatsApp</button>
-    </form>
+      <textarea id="order-note-en" class="order-note-area" placeholder="Add a note (e.g., no spice, extra pickles, no tomatoes...)"></textarea>
+      <button id="whatsapp-send-en" class="whatsapp-submit-btn" onclick="sendOrderWhatsApp()">
+        <span>💬 Send Order via WhatsApp</span>
+      </button>
+    </div>
   </div>
+
   <script>
-  const panel = document.getElementById('slide-panel');
-  const overlay = document.getElementById('slide-panel-overlay');
-  if (panel) panel.classList.remove('active');
-  if (overlay) overlay.classList.remove('active');
-  const openPanel = document.getElementById('open-modal');
-  const openPanelDesktop = document.getElementById('open-modal-desktop');
-  const openPanelMobile = document.getElementById('mobile-order-btn');
-  const closePanel = document.getElementById('close-panel');
-  function openPanelFunc() {
+    // Cart Panel Elements
     const panel = document.getElementById('slide-panel');
     const overlay = document.getElementById('slide-panel-overlay');
-    if (panel && overlay) {
-      panel.classList.add('active');
-      overlay.classList.add('active');
-      panel.focus();
-      document.body.style.overflow = 'hidden';
-    }
-  }
-  function closePanelFunc() {
-    panel.classList.remove('active');
-    overlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-  if(openPanel) openPanel.onclick = openPanelFunc;
-  if(openPanelDesktop) openPanelDesktop.onclick = openPanelFunc;
-  if(openPanelMobile) openPanelMobile.onclick = openPanelFunc;
-  if(closePanel) closePanel.onclick = closePanelFunc;
-  if(overlay) overlay.onclick = closePanelFunc;
-  document.addEventListener('keydown', function(e) {
-    if (panel.classList.contains('active') && e.key === 'Escape') {
-      closePanelFunc();
-    }
-  });
 
-  document.querySelectorAll('.order-form .qty-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      const action = btn.getAttribute('data-action');
-      const qtySpan = btn.parentElement.querySelector('.qty');
-      let value = parseInt(qtySpan.textContent, 10) || 0;
-      if (action === 'inc') value++;
-      if (action === 'dec' && value > 0) value--;
-      qtySpan.textContent = value;
+    // Menu database parsed from document
+    const menuData = {};
+    document.querySelectorAll('.menu-card').forEach(card => {
+      const id = card.getAttribute('data-id');
+      const name = card.getAttribute('data-name');
+      const price = parseInt(card.getAttribute('data-price'), 10);
+      menuData[id] = { id, name, price };
     });
-  });
 
-  const whatsappSendEn = document.getElementById('whatsapp-send-en');
-  if (whatsappSendEn) {
-    whatsappSendEn.addEventListener('click', function() {
-      let message = 'Severse Doner Order:%0A';
-      let total = 0;
-      document.querySelectorAll('#order-form-en .order-item').forEach(function(item) {
-        const qty = parseInt(item.querySelector('.qty').textContent.trim(), 10) || 0;
-        const name = item.querySelector('.item-name').textContent.trim();
-        const priceText = item.querySelector('.price').textContent.trim();
-        let price = 0;
-        const match = priceText.match(/([0-9]+)[₺TL]*/);
-        if (match) price = parseInt(match[1], 10);
-        if (qty > 0) {
-          message += `${qty} x ${name} (${priceText})%0A`;
-          if (!isNaN(price)) total += qty * price;
+    // Custom configurations for toppings/extras
+    const itemConfigs = {
+      'chicken-small': { hasCheddar: true },
+      'chicken-large': { hasCheddar: true },
+      'lamb-small': { hasCheddar: true },
+      'lamb-large': { hasCheddar: true },
+      'pizza-veggie': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-margherita': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-fourcheese': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-seafood': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-sausage': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-supreme': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-chicken': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-lamb': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-ribs': { hasExtraVeg: true, hasExtraMeat: true },
+      'pizza-special': { hasExtraVeg: true, hasExtraMeat: true }
+    };
+
+    // Cart state
+    let cart = {};
+
+    // Load cart from localStorage on init
+    try {
+      const savedCart = localStorage.getItem('severse_cart');
+      if (savedCart) {
+        cart = JSON.parse(savedCart);
+        // validate items in loaded cart
+        for (const key in cart) {
+          if (!menuData[key]) delete cart[key];
+        }
+      }
+    } catch (e) {
+      console.error("Could not parse saved cart", e);
+    }
+
+    // Sync UI states on load
+    updateUI();
+
+    // Category Tabs Filter Logic
+    document.querySelectorAll('.category-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.category-tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const target = btn.getAttribute('data-target');
+        document.querySelectorAll('.menu-category-block').forEach(block => {
+          if (target === 'all' || block.getAttribute('data-id') === target) {
+            block.classList.remove('hidden');
+          } else {
+            block.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Cart Panel Management
+    function openPanelFunc() {
+      if (panel && overlay) {
+        drawCartItems();
+        panel.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closePanelFunc() {
+      if (panel && overlay) {
+        panel.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    if (overlay) overlay.addEventListener('click', closePanelFunc);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closePanelFunc();
+    });
+
+    // Add Item to Cart
+    function addToCart(id) {
+      if (!cart[id]) {
+        cart[id] = {
+          id: id,
+          qty: 1,
+          addons: {
+            cheddar: false,
+            extraVeg: false,
+            extraMeat: false
+          }
+        };
+      } else {
+        cart[id].qty += 1;
+      }
+      saveCart();
+      updateUI();
+    }
+
+    // Change Item quantity
+    function changeQty(id, diff) {
+      if (cart[id]) {
+        cart[id].qty += diff;
+        if (cart[id].qty <= 0) {
+          delete cart[id];
+        }
+        saveCart();
+        updateUI();
+      }
+    }
+
+    // Save cart state
+    function saveCart() {
+      localStorage.setItem('severse_cart', JSON.stringify(cart));
+    }
+
+    // Update overall UI counters and card states
+    function updateUI() {
+      let totalQty = 0;
+      
+      // Update each menu card's buttons based on cart
+      document.querySelectorAll('.menu-card').forEach(card => {
+        const id = card.getAttribute('data-id');
+        const addBtn = card.querySelector('.add-to-cart-btn');
+        const qtyCtrl = card.querySelector('.qty-control-pill');
+        const qtyVal = card.querySelector('.qty-val');
+        
+        if (cart[id]) {
+          addBtn.style.display = 'none';
+          qtyCtrl.classList.add('active');
+          qtyVal.textContent = cart[id].qty;
+          totalQty += cart[id].qty;
+        } else {
+          addBtn.style.display = 'block';
+          qtyCtrl.classList.remove('active');
+          qtyVal.textContent = '0';
         }
       });
+
+      // Update badge
+      const badge = document.getElementById('cart-badge');
+      if (badge) {
+        if (totalQty > 0) {
+          badge.textContent = totalQty;
+          badge.style.display = 'flex';
+        } else {
+          badge.style.display = 'none';
+        }
+      }
+
+      // If panel is active, refresh the items drawn
+      if (panel && panel.classList.contains('active')) {
+        drawCartItems();
+      }
+    }
+
+    // Toggle item addon checked state
+    function toggleAddon(itemId, addonKey) {
+      if (cart[itemId] && cart[itemId].addons) {
+        cart[itemId].addons[addonKey] = !cart[itemId].addons[addonKey];
+        saveCart();
+        drawCartItems();
+      }
+    }
+
+    // Calculate individual item total price
+    function calculateItemPrice(cartItem) {
+      const itemInfo = menuData[cartItem.id];
+      if (!itemInfo) return 0;
+      
+      let unitPrice = itemInfo.price;
+      if (cartItem.addons.cheddar) unitPrice += 100;
+      if (cartItem.addons.extraVeg) unitPrice += 100;
+      if (cartItem.addons.extraMeat) unitPrice += 200;
+      
+      return unitPrice * cartItem.qty;
+    }
+
+    // Draw Cart Items in Drawer
+    function drawCartItems() {
+      const container = document.getElementById('cart-items-container');
+      const totalPriceVal = document.getElementById('cart-total-price');
+      if (!container) return;
+
+      container.innerHTML = '';
+      let grandTotal = 0;
+      let hasItems = false;
+
+      const listElement = document.createElement('div');
+      listElement.className = 'cart-item-list';
+
+      for (const id in cart) {
+        hasItems = true;
+        const cartItem = cart[id];
+        const itemInfo = menuData[id];
+        if (!itemInfo) continue;
+
+        const itemTotal = calculateItemPrice(cartItem);
+        grandTotal += itemTotal;
+
+        const itemHtml = `
+          <div class="cart-item">
+            <div class="cart-item-row">
+              <div class="cart-item-info">
+                <div class="cart-item-name">${itemInfo.name}</div>
+                <div class="cart-item-base-price">${itemInfo.price}₺ / pcs</div>
+              </div>
+              <div class="cart-item-actions">
+                <button class="cart-qty-btn" onclick="changeQty('${id}', -1)">-</button>
+                <span class="cart-item-qty">${cartItem.qty}</span>
+                <button class="cart-qty-btn" onclick="changeQty('${id}', 1)">+</button>
+              </div>
+              <div class="cart-item-price">${itemTotal}₺</div>
+            </div>
+            
+            ${itemConfigs[id] ? `
+              <div class="cart-item-extras">
+                ${itemConfigs[id].hasCheddar ? `
+                  <label class="cart-extra-option">
+                    <span class="cart-extra-label">
+                      <input type="checkbox" ${cartItem.addons.cheddar ? 'checked' : ''} onchange="toggleAddon('${id}', 'cheddar')">
+                      🧀 Add Cheddar or Yellow Cheese
+                    </span>
+                    <span class="cart-extra-price">+100₺</span>
+                  </label>
+                ` : ''}
+                ${itemConfigs[id].hasExtraVeg ? `
+                  <label class="cart-extra-option">
+                    <span class="cart-extra-label">
+                      <input type="checkbox" ${cartItem.addons.extraVeg ? 'checked' : ''} onchange="toggleAddon('${id}', 'extraVeg')">
+                      🥗 Add Extra Veggies
+                    </span>
+                    <span class="cart-extra-price">+100₺</span>
+                  </label>
+                ` : ''}
+                ${itemConfigs[id].hasExtraMeat ? `
+                  <label class="cart-extra-option">
+                    <span class="cart-extra-label">
+                      <input type="checkbox" ${cartItem.addons.extraMeat ? 'checked' : ''} onchange="toggleAddon('${id}', 'extraMeat')">
+                      🥩 Add Extra Meat
+                    </span>
+                    <span class="cart-extra-price">+200₺</span>
+                  </label>
+                ` : ''}
+              </div>
+            ` : ''}
+          </div>
+        `;
+        
+        listElement.innerHTML += itemHtml;
+      }
+
+      if (!hasItems) {
+        container.innerHTML = `
+          <div class="cart-empty-state">
+            <span>🛒</span>
+            <p>Your cart is empty.</p>
+            <p style="font-size:0.85rem;color:var(--text-muted)">Start adding delicious items from our menu!</p>
+          </div>
+        `;
+      } else {
+        container.appendChild(listElement);
+      }
+
+      totalPriceVal.textContent = grandTotal + '₺';
+    }
+
+    // Send order via WhatsApp
+    function sendOrderWhatsApp() {
+      let message = '🛒 *Severse Doner & Pizza Order*%0A%0A';
+      let total = 0;
+      let hasItems = false;
+
+      for (const id in cart) {
+        const cartItem = cart[id];
+        const itemInfo = menuData[id];
+        if (!itemInfo) continue;
+
+        hasItems = true;
+        const itemTotal = calculateItemPrice(cartItem);
+        total += itemTotal;
+
+        message += `• *${cartItem.qty}x ${itemInfo.name}* (${itemInfo.price}₺/ea)%0A`;
+        
+        let addonTexts = [];
+        if (cartItem.addons.cheddar) addonTexts.push('Cheddar (+100₺)');
+        if (cartItem.addons.extraVeg) addonTexts.push('Extra Veggies (+100₺)');
+        if (cartItem.addons.extraMeat) addonTexts.push('Extra Meat (+200₺)');
+        
+        if (addonTexts.length > 0) {
+          message += `   └ _Extras: ${addonTexts.join(', ')}_%0A`;
+        }
+      }
+
       const note = document.getElementById('order-note-en').value.trim();
       if (note) {
-        message += `%0ANote: ${note}`;
+        message += `%0A📝 *Order Note:* ${note}%0A`;
       }
-      if (total > 0) {
-        message += `%0ATotal: ${total}₺`;
-      }
-      const phone = '905383504563';
-      const url = `https://wa.me/${phone}?text=${message}`;
-      window.open(url, '_blank');
-    });
-  }
 
-  ['open-modal', 'order-btn-sticky'].forEach(function(id) {
-    var btn = document.getElementById(id);
-    if (btn) {
-      btn.onclick = function(e) { e.preventDefault(); openPanelFunc(); return false; };
+      if (total > 0) {
+        message += `%0A💰 *Total Price: ${total}₺*`;
+      }
+
+      if (hasItems) {
+        const phone = '905383504563';
+        const url = `https://wa.me/${phone}?text=${message}`;
+        window.open(url, '_blank');
+        
+        closePanelFunc();
+      } else {
+        alert('Please add at least one item to your cart!');
+      }
     }
-  });
   </script>
 </body>
-</html> 
+</html>
