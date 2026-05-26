@@ -1164,7 +1164,7 @@
 
     // Send order via WhatsApp
     function sendOrderWhatsApp() {
-      let message = '🛒 *Severse Döner & Pizza Siparişi*%0A%0A';
+      let message = '🛒 *Severse Döner & Pizza Siparişi*\n\n';
       let total = 0;
       let hasItems = false;
 
@@ -1177,7 +1177,7 @@
         const itemTotal = calculateItemPrice(cartItem);
         total += itemTotal;
 
-        message += `• *${cartItem.qty}x ${itemInfo.name}* (${itemInfo.price}₺/ad)%0A`;
+        message += `• *${cartItem.qty}x ${itemInfo.name}* (${itemInfo.price}₺/ad)\n`;
         
         let addonTexts = [];
         if (cartItem.addons.cheddar) addonTexts.push('Cheddar/Kaşar (+100₺)');
@@ -1185,25 +1185,24 @@
         if (cartItem.addons.extraMeat) addonTexts.push('Ekstra Et (+200₺)');
         
         if (addonTexts.length > 0) {
-          message += `   └ _Ekstralar: ${addonTexts.join(', ')}_%0A`;
+          message += `   └ _Ekstralar: ${addonTexts.join(', ')}_\n`;
         }
       }
 
       const note = document.getElementById('order-note-tr').value.trim();
       if (note) {
-        message += `%0A📝 *Sipariş Notu:* ${note}%0A`;
+        message += `\n📝 *Sipariş Notu:* ${note}\n`;
       }
 
       if (total > 0) {
-        message += `%0A💰 *Toplam Tutar: ${total}₺*`;
+        message += `\n💰 *Toplam Tutar: ${total}₺*`;
       }
 
       if (hasItems) {
         const phone = '905383504563';
-        const url = `https://wa.me/${phone}?text=${message}`;
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
         
-        // Clear cart after sending (optional, let's keep it for convenience or let the user decide, but close panel is good)
         closePanelFunc();
       } else {
         alert('Lütfen sepetinize en az bir ürün ekleyin!');

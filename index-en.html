@@ -1164,7 +1164,7 @@
 
     // Send order via WhatsApp
     function sendOrderWhatsApp() {
-      let message = '🛒 *Severse Doner & Pizza Order*%0A%0A';
+      let message = '🛒 *Severse Doner & Pizza Order*\n\n';
       let total = 0;
       let hasItems = false;
 
@@ -1177,7 +1177,7 @@
         const itemTotal = calculateItemPrice(cartItem);
         total += itemTotal;
 
-        message += `• *${cartItem.qty}x ${itemInfo.name}* (${itemInfo.price}₺/ea)%0A`;
+        message += `• *${cartItem.qty}x ${itemInfo.name}* (${itemInfo.price}₺/ea)\n`;
         
         let addonTexts = [];
         if (cartItem.addons.cheddar) addonTexts.push('Cheddar (+100₺)');
@@ -1185,22 +1185,22 @@
         if (cartItem.addons.extraMeat) addonTexts.push('Extra Meat (+200₺)');
         
         if (addonTexts.length > 0) {
-          message += `   └ _Extras: ${addonTexts.join(', ')}_%0A`;
+          message += `   └ _Extras: ${addonTexts.join(', ')}_\n`;
         }
       }
 
       const note = document.getElementById('order-note-en').value.trim();
       if (note) {
-        message += `%0A📝 *Order Note:* ${note}%0A`;
+        message += `\n📝 *Order Note:* ${note}\n`;
       }
 
       if (total > 0) {
-        message += `%0A💰 *Total Price: ${total}₺*`;
+        message += `\n💰 *Total Price: ${total}₺*`;
       }
 
       if (hasItems) {
         const phone = '905383504563';
-        const url = `https://wa.me/${phone}?text=${message}`;
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
         
         closePanelFunc();
