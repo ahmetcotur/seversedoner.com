@@ -247,8 +247,9 @@
         <!-- Pizzalar -->
         <article class="menu-category-block" data-id="pizza">
           <h3>Pizzalar</h3>
+          <p class="category-closed-note">⏸️ Şu anda pizza siparişi alınmamaktadır. Ürünlerimizi inceleyebilirsiniz, sipariş için lütfen daha sonra tekrar deneyin.</p>
           <ul class="menu-grid" role="list">
-            <li class="menu-card" data-id="pizza-veggie" data-name="Vejetaryen Pizza" data-price="500">
+            <li class="menu-card order-closed" data-id="pizza-veggie" data-name="Vejetaryen Pizza" data-price="500">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Vejetaryen Pizza" class="menu-img" width="90" height="90">
@@ -261,7 +262,7 @@
               <div class="menu-card-bottom">
                 <span class="price">500₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-veggie')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-veggie">
                     <button onclick="changeQty('pizza-veggie', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -270,7 +271,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-margherita" data-name="Margherita Pizza" data-price="500">
+            <li class="menu-card order-closed" data-id="pizza-margherita" data-name="Margherita Pizza" data-price="500">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Margherita Pizza" class="menu-img" width="90" height="90">
@@ -283,7 +284,7 @@
               <div class="menu-card-bottom">
                 <span class="price">500₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-margherita')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-margherita">
                     <button onclick="changeQty('pizza-margherita', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -292,7 +293,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-fourcheese" data-name="Dört Peynirli Pizza" data-price="650">
+            <li class="menu-card order-closed" data-id="pizza-fourcheese" data-name="Dört Peynirli Pizza" data-price="650">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Dört Peynirli Pizza" class="menu-img" width="90" height="90">
@@ -305,7 +306,7 @@
               <div class="menu-card-bottom">
                 <span class="price">650₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-fourcheese')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-fourcheese">
                     <button onclick="changeQty('pizza-fourcheese', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -314,7 +315,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-seafood" data-name="Deniz Mahsüllü Pizza" data-price="850">
+            <li class="menu-card order-closed" data-id="pizza-seafood" data-name="Deniz Mahsüllü Pizza" data-price="850">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Deniz Mahsüllü Pizza" class="menu-img" width="90" height="90">
@@ -327,7 +328,7 @@
               <div class="menu-card-bottom">
                 <span class="price">850₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-seafood')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-seafood">
                     <button onclick="changeQty('pizza-seafood', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -336,7 +337,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-sausage" data-name="Süper Sosisli Pizza" data-price="850">
+            <li class="menu-card order-closed" data-id="pizza-sausage" data-name="Süper Sosisli Pizza" data-price="850">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Süper Sosisli Pizza" class="menu-img" width="90" height="90">
@@ -349,7 +350,7 @@
               <div class="menu-card-bottom">
                 <span class="price">850₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-sausage')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-sausage">
                     <button onclick="changeQty('pizza-sausage', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -358,7 +359,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-supreme" data-name="Pizza Supreme" data-price="650">
+            <li class="menu-card order-closed" data-id="pizza-supreme" data-name="Pizza Supreme" data-price="650">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Pizza Supreme" class="menu-img" width="90" height="90">
@@ -371,7 +372,7 @@
               <div class="menu-card-bottom">
                 <span class="price">650₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-supreme')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-supreme">
                     <button onclick="changeQty('pizza-supreme', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -380,7 +381,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-chicken" data-name="Tavuk Dönerli Pizza" data-price="650">
+            <li class="menu-card order-closed" data-id="pizza-chicken" data-name="Tavuk Dönerli Pizza" data-price="650">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Tavuk Dönerli Pizza" class="menu-img" width="90" height="90">
@@ -393,7 +394,7 @@
               <div class="menu-card-bottom">
                 <span class="price">650₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-chicken')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-chicken">
                     <button onclick="changeQty('pizza-chicken', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -402,7 +403,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-lamb" data-name="Et Dönerli Pizza" data-price="700">
+            <li class="menu-card order-closed" data-id="pizza-lamb" data-name="Et Dönerli Pizza" data-price="700">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Et Dönerli Pizza" class="menu-img" width="90" height="90">
@@ -415,7 +416,7 @@
               <div class="menu-card-bottom">
                 <span class="price">700₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-lamb')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-lamb">
                     <button onclick="changeQty('pizza-lamb', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -424,7 +425,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-ribs" data-name="Füme Kaburgalı Pizza (Ribs Special)" data-price="850">
+            <li class="menu-card order-closed" data-id="pizza-ribs" data-name="Füme Kaburgalı Pizza (Ribs Special)" data-price="850">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Füme Kaburgalı Pizza" class="menu-img" width="90" height="90">
@@ -437,7 +438,7 @@
               <div class="menu-card-bottom">
                 <span class="price">850₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-ribs')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-ribs">
                     <button onclick="changeQty('pizza-ribs', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -446,7 +447,7 @@
                 </div>
               </div>
             </li>
-            <li class="menu-card" data-id="pizza-special" data-name="Severse Özel Pizza" data-price="850">
+            <li class="menu-card order-closed" data-id="pizza-special" data-name="Severse Özel Pizza" data-price="850">
               <div class="menu-card-top">
                 <div class="menu-img-container">
                   <img src="Asset/image.png" alt="Severse Özel Pizza" class="menu-img" width="90" height="90">
@@ -459,7 +460,7 @@
               <div class="menu-card-bottom">
                 <span class="price">850₺</span>
                 <div class="card-action">
-                  <button class="add-to-cart-btn" onclick="addToCart('pizza-special')">➕ Ekle</button>
+                  <button class="add-to-cart-btn is-disabled" disabled aria-disabled="true" title="Şu anda pizza siparişi alınmamaktadır.">🚫 Sipariş Kapalı</button>
                   <div class="qty-control-pill" id="qty-ctrl-pizza-special">
                     <button onclick="changeQty('pizza-special', -1)">-</button>
                     <span class="qty-val">0</span>
@@ -918,6 +919,12 @@
     // Cart state
     let cart = {};
 
+    // Categories currently not accepting orders (items stay visible in the menu)
+    const ORDER_CLOSED_PREFIXES = ['pizza-'];
+    function isOrderClosed(id) {
+      return ORDER_CLOSED_PREFIXES.some(prefix => id.startsWith(prefix));
+    }
+
     // Load cart from localStorage on init
     try {
       const savedCart = localStorage.getItem('severse_cart');
@@ -925,7 +932,7 @@
         cart = JSON.parse(savedCart);
         // validate items in loaded cart
         for (const key in cart) {
-          if (!menuData[key]) delete cart[key];
+          if (!menuData[key] || isOrderClosed(key)) delete cart[key];
         }
       }
     } catch (e) {
@@ -977,6 +984,7 @@
 
     // Add Item to Cart
     function addToCart(id) {
+      if (isOrderClosed(id)) return;
       if (!cart[id]) {
         cart[id] = {
           id: id,
