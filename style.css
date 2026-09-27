@@ -606,6 +606,41 @@ body {
   color: white;
 }
 
+/* Category-level "orders closed" notice */
+.category-closed-note {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--secondary);
+  background: rgba(255, 107, 53, 0.08);
+  border: 1px solid rgba(255, 107, 53, 0.25);
+  padding: 0.7rem 1.1rem;
+  border-radius: 12px;
+  margin: -1.2rem 0 1.8rem;
+}
+
+/* Items that are visible but not orderable */
+.menu-card.order-closed {
+  opacity: 0.85;
+}
+
+.add-to-cart-btn.is-disabled,
+.add-to-cart-btn:disabled {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.add-to-cart-btn.is-disabled:hover,
+.add-to-cart-btn:disabled:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+  box-shadow: none;
+  transform: none;
+}
+
 /* About Us Section */
 .about-compact-block {
   max-width: 1200px;
